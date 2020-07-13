@@ -1,0 +1,168 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /*background-color: lightgray;*/
+}
+
+.padre{
+    background-color: #f7fbfc;
+}
+.header{
+     background-color: #d6e6f2; 
+    
+}
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+         .logo, .buscador, .iconos{
+            background-color: #d6e6f2;
+            padding: 0px;
+            align-self: flex-end;
+        } 
+        .logo{
+            flex-grow: 3;
+       }
+         .buscador{
+            flex-grow: 4;
+            overflow: hidden;
+            padding: 50px;
+            padding: 0px;
+        }  
+           
+        .iconos{
+            flex-grow: 1;
+        }
+    
+        .nav{
+            background-color: #d6e6f2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+   
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0; 
+                overflow: hidden;
+                
+            }
+            li{
+                float: left;
+            }
+            li a {
+                text-decoration: none;
+                padding: 0px;
+                margin: 0px;
+            }
+
+
+        
+.novedades{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.novedad1, .novedad2, .novedad3, .novedad4{
+   /*  background-color: #fce38a; */
+    padding: 10px;
+}
+
+.suscripcion{
+    display: flex;
+    flex-direction: column;
+/*     background-color: yellow; 
+ */    }
+    .alta{
+/*      background-color: blue;*/
+        text-align: center;
+        padding: 0px;
+    }
+
+    .vendidos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background-color: yellow; */
+        flex-wrap: wrap;
+       /*  max-height: 200px; */
+    }
+
+        .vendidos1, .vendidos2, .vendidos3, .vendidos4, .vendidos5{
+            padding: 0px;
+            /* background-color: #fce38a; */
+        }
+
+/* .texto{
+    border: 1px solid black;
+} */
+
+#quienes_somos{
+    padding: 30px;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 60px;
+}
+
+.footer{
+    background-color: #b9d7ea;
+    display: flex;
+    flex-direction: column;
+}
+.logo_foot, .rrss, .texto_foot{
+    /* background-color: blue; */
+    text-align: center;
+    color: black;
+    }
+
+
+
+
+    /* media query*/
+/*a partir de pantalla menor 800px cambia la estructura: apartado section pasan a estar distribuidas x columnas (de row a columnas)*/
+
+@media all and (max-width:800px){
+    *{
+        margin: 5px;
+        padding: 5px;
+    } 
+
+    .cabecera{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+   .suscripcion{
+         /* border: 1px solid black; */
+         margin: 0px;
+    }
+    .alta{
+        margin: 0px;
+    }
+
+    #quienes_somos{
+        padding: 0px;
+        text-align: justify;
+        column-count: 1;
+    }
+    .logo, .buscador, .logo_foot{
+        margin: 0px;
+        padding: 0px;
+     /* border: 1px solid black; */
+     }
+     .logo, .buscador, .iconos{
+        align-self: center;
+     }
+
+    
