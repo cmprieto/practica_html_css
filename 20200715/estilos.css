@@ -1,0 +1,242 @@
+*{
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1300px;
+    
+}
+
+.padre{
+    background-color: #ddf3f5;
+}
+
+/* ----------------------------------  HEADER */
+
+.header{
+    background-color: #e36387; 
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0px;
+}
+/* ----------------------------------  TOP CABECERA */
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        margin: 25px;
+        padding: 0px;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+      }
+
+         .logo, .iconos{
+            padding: 0px;
+            margin: 0px;
+            } 
+           
+
+        .logo{
+            flex-grow: 1;
+       }
+
+       /* ---------------------------------- BUSCADOR EN HEADER */
+
+.buscador2{
+        margin: 0px;
+        padding: 0px;
+        flex-grow: 5;
+    }
+
+    .buscador2_{
+        text-align: center;
+        margin: 0px;
+        padding: 0px;  
+        
+    } 
+ /* ---------------------------------- iconos EN HEADER */       
+        .iconos{
+            flex-grow: 1;
+        }
+
+/* ---------------------------------- SUBMENU */
+        .subcabecera{
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            }
+        
+
+/* ----------------------------------  MENU EN HEADER */
+
+        .menu{
+            margin: 0px;
+            padding: 0px;
+            } 
+        .nav{
+            margin: 0px;
+            padding: 0px; 
+            text-transform: uppercase;
+            color: white;
+            } 
+        
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px; 
+                overflow: hidden;
+                text-align: center;
+            }
+            li{
+                display: inline-block;
+                margin: 0px;
+                padding: 0px; 
+                 
+            }
+            li a {
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 0px;
+                margin: 0px;
+                
+            }
+                a:visited{
+                    color: whitesmoke;
+                }
+                a:hover{
+                    color: #fb929e;
+                }
+
+
+
+
+                
+                  
+/* ---------------------------------- LIBROS NOVEDADES */
+
+.article1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.novedad1, .novedad2, .novedad3, .novedad4{
+   /*  background-color: #fce38a; */
+    padding: 10px;
+}
+
+/* ---------------------------------- ALTA SUSCRIPCION */
+
+.suscripcion{
+    display: flex;
+    flex-direction: column;
+    background-color: #a6dcef;
+/*     background-color: yellow; 
+ */    }
+    .alta{
+    
+        text-align: center;
+        padding: 0px;
+    }
+
+/* ---------------------------------- LIBROS MÁS VENDIDOS */
+
+    .article2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background-color: yellow; */
+        flex-wrap: wrap;
+       
+    }
+
+        .vendidos1, .vendidos2, .vendidos3, .vendidos4, .vendidos5{
+            padding: 0px;
+            /* background-color: #fce38a; */
+        }
+
+
+/* ---------------------------------- TEXTO QUIENES SOMOS */
+
+.texto{
+    text-align: center;
+    /* background-color: #fff6f6; */
+}
+
+#quienes_somos{
+    padding: 30px;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 60px;
+    line-height: 1.6;
+    border-top: 2px solid black;
+
+}
+
+/* ---------------------------------- FOOTER */
+
+.footer{
+    background-color: #f2aaaa;
+    display: flex;
+    flex-direction: column;
+}
+.logo_foot, .rrss, .texto_foot{
+    /* background-color: blue; */
+    text-align: center;
+    color: black;
+    }
+
+h3{
+    font-weight: lighter;
+}
+
+
+
+/* ---------------------------------- MEDIA QUERY*/
+/*a partir de pantalla menor 800px cambia la estructura: apartado section pasan a estar distribuidas x columnas (de row a columnas)*/
+
+@media all and (max-width:800px){
+    *{
+        margin: 5px;
+        padding: 5px;
+    } 
+
+    .cabecera{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+    .subcabecera{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+   .suscripcion{
+         /* border: 1px solid black; */
+         margin: 0px;
+    }
+    .alta{
+        margin: 0px;
+    }
+
+    #quienes_somos{
+        padding: 0px;
+        text-align: justify;
+        column-count: 1;
+    }
+    .logo, .buscador2, .logo_foot{
+        margin: 0px;
+        padding: 0px;
+     /* border: 1px solid black; */
+     }
+     .logo, .buscador, .iconos{
+        align-self: center;
+     }
+
