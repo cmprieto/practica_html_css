@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 1300px;
-    
 }
 
 .padre{
@@ -129,16 +128,19 @@
     padding: 10px;
 }
 
+h2{
+    padding-left: 40px;
+}
 /* ---------------------------------- ALTA SUSCRIPCION */
 
 .suscripcion{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     background-color: #a6dcef;
-/*     background-color: yellow; 
- */    }
-    .alta{
+    max-width: 800px;
+    }
     
+    .alta{
         text-align: center;
         padding: 0px;
     }
@@ -231,12 +233,8 @@ h3{
         text-align: justify;
         column-count: 1;
     }
-    .logo, .buscador2, .logo_foot{
+    .logo, .logo_foot{
         margin: 0px;
-        padding: 0px;
-     /* border: 1px solid black; */
+        padding: 0px; 
      }
-     .logo, .buscador, .iconos{
-        align-self: center;
-     }
-
+    
